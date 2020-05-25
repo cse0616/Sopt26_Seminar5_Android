@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+          android:icon="@drawable/navi_home_unclicked"
+          android:title="홈"/>
+    <item android:id="@+id/menu_coupon"
+          android:icon="@drawable/navi_coupon_unclicked"
+          android:title="쿠폰"/>
+    <item android:id="@+id/menu_menu"
+          android:icon="@drawable/navi_menu_unclicked"
+          android:title="메뉴"/>
+    <item android:id="@+id/menu_store"
+          android:icon="@drawable/navi_store_unclicked"
+          android:title="매장찾기"/>
+    <item android:id="@+id/menu_more"
+          android:icon="@drawable/navi_etc_unclicked"
+          android:title="더보기"/>
+</menu>

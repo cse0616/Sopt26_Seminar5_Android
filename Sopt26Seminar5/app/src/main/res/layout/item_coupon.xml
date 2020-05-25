@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="17dp"
+        android:id="@+id/rv_coupon_container">
+
+    <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+        <TextView
+                android:id="@+id/txt_rv_menu"
+                android:text="버거"
+                android:textSize="11sp"
+                android:textColor="#818181"
+                android:lineSpacingExtra="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/txt_rv_name"
+                android:text="버거 이름"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#262626"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="59dp">
+            <TextView
+                    android:id="@+id/txt_rv_price"
+                    android:text="할인가격"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#f5be43"
+                    android:lineSpacingExtra="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/txt_rv_price_origin"
+                    android:text="원래가격"
+                    android:textSize="12sp"
+                    android:textColor="#818181"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="6sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+                android:id="@+id/txt_rv_date"
+                android:text="유효기간"
+                android:textSize="12sp"
+                android:textColor="#818181"
+                android:lineSpacingExtra="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+    />
+
+    <ImageView
+            android:layout_width="128dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/coupon_img_menu1"
+            android:id="@+id/img_rv_menu"/>
+</LinearLayout>

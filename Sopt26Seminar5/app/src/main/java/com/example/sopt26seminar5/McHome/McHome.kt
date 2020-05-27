@@ -24,7 +24,7 @@ class McHome : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        home_viewpager.adapter=CustomPagerAdapter(childFragmentManager)
+        home_viewpager.adapter=McHomePagerAdapter(childFragmentManager)
         home_viewpager.offscreenPageLimit=2
         tab.setupWithViewPager(home_viewpager)
     }

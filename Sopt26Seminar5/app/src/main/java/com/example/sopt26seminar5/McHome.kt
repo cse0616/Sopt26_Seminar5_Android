@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.sopt26seminar5.R
 import kotlinx.android.synthetic.main.fragment_mc_home.*
 
 /**

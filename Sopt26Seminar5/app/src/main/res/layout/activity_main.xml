@@ -8,21 +8,12 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-    <ScrollView
-            android:id="@+id/scrollView"
+    <FrameLayout
+            android:id="@+id/frame_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
-
-        <FrameLayout
-                android:id="@+id/frame_layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="?attr/actionBarSize"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
-
-    </ScrollView>
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/main_bottom_navigation"

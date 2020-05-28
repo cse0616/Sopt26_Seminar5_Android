@@ -3,8 +3,11 @@ package com.example.sopt26seminar5
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.widget.TextView
+import androidx.core.view.setPadding
 import androidx.fragment.app.FragmentTransaction
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.padding
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,5 +38,6 @@ class MainActivity : AppCompatActivity() {
                 transaction.commit()
                 true
         }
+
     }
 }

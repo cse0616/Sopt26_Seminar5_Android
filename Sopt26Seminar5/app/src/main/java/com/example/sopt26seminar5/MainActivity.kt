@@ -11,8 +11,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        main_bottom_navigation.setOnNavigationItemReselectedListener {
+        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.frame_layout, HomeFragment(), "home").commitAllowingStateLoss()
+        main_bottom_navigation.setOnNavigationItemSelectedListener {
             val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
             when(it.itemId) {
                 R.id.menu_home -> {

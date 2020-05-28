@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.sopt26seminar5.R
 
-class McHomePagerAdapter(fm:FragmentManager):
+class CustomPagerAdapter(fm:FragmentManager):
 FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 
     val images= arrayOf(

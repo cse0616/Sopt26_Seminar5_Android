@@ -11,6 +11,7 @@ import com.example.oursopt5.recyclerview_burger.BgData
 import com.example.oursopt5.recyclerview_menu.McHomeDecoration
 import com.example.oursopt5.recyclerview_menu.MenuBtnAdapter
 import com.example.oursopt5.recyclerview_menu.MenuBtnData
+import com.example.soptseminar5.CustomPagerAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.home_viewpager
 import kotlinx.android.synthetic.main.fragment_home.tab
@@ -45,7 +46,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //home_viewpager.adapter= CustomPagerAdapter(childFragmentManager)
+        home_viewpager.adapter= CustomPagerAdapter(childFragmentManager)
         home_viewpager.offscreenPageLimit=2
         tab.setupWithViewPager(home_viewpager)
 

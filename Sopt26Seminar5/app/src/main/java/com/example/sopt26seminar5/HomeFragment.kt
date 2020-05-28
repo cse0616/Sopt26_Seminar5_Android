@@ -6,8 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-<<<<<<< HEAD
-=======
 import com.example.oursopt5.recyclerview_burger.BgAdapter
 import com.example.oursopt5.recyclerview_burger.BgData
 import com.example.oursopt5.recyclerview_menu.McHomeDecoration
@@ -18,7 +16,6 @@ import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.home_viewpager
 import kotlinx.android.synthetic.main.fragment_home.tab
 import kotlinx.android.synthetic.main.fragment_mc_home.*
->>>>>>> 598748a352f54594c5e76f2adb2e79e6c80aade2
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -32,15 +29,12 @@ private const val ARG_PARAM2 = "param2"
  */
 class HomeFragment : Fragment() {
 
-<<<<<<< HEAD
-=======
     lateinit var bgAdapter: BgAdapter
     val datas = mutableListOf<BgData>()
 
     lateinit var menuBtnAdapter: MenuBtnAdapter
     val datas_menu = mutableListOf<MenuBtnData>()
 
->>>>>>> 598748a352f54594c5e76f2adb2e79e6c80aade2
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -49,8 +43,6 @@ class HomeFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
-<<<<<<< HEAD
-=======
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -156,8 +148,4 @@ class HomeFragment : Fragment() {
         menuBtnAdapter.notifyDataSetChanged()
 
     }
-
-
->>>>>>> 598748a352f54594c5e76f2adb2e79e6c80aade2
-
 }

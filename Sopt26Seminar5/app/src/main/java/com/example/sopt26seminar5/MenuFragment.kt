@@ -2,22 +2,15 @@ package com.example.sopt26seminar5
 
 
 import android.os.Bundle
-<<<<<<< HEAD
 import android.text.Editable
 import android.text.TextWatcher
-=======
->>>>>>> 598748a352f54594c5e76f2adb2e79e6c80aade2
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-<<<<<<< HEAD
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.fragment_menu.*
-=======
->>>>>>> 598748a352f54594c5e76f2adb2e79e6c80aade2
-
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,17 +22,12 @@ private const val ARG_PARAM2 = "param2"
  *
  */
 class MenuFragment : Fragment() {
-
-<<<<<<< HEAD
-
     lateinit var categoryAdapter : CategoryAdapter
     val categorydatas = mutableListOf<CategoryData>()
 
     lateinit var menuAdapter : MenuAdapter
     val menudatas = mutableListOf<MenuData>()
 
-=======
->>>>>>> 598748a352f54594c5e76f2adb2e79e6c80aade2
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -48,7 +36,7 @@ class MenuFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_menu, container, false)
     }
 
-<<<<<<< HEAD
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -179,7 +167,4 @@ class MenuFragment : Fragment() {
         menuAdapter.datas = menudatas
         menuAdapter.notifyDataSetChanged()
     }
-=======
-
->>>>>>> 598748a352f54594c5e76f2adb2e79e6c80aade2
 }

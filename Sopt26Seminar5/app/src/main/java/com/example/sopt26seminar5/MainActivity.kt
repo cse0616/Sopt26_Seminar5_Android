@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import androidx.fragment.app.FragmentTransaction
-import com.example.soptseminar5.McHome
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,28 +12,28 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.frame_layout, McHome(), "home").commitAllowingStateLoss()
+        transaction.replace(R.id.frame_layout, HomeFragment(), "home").commitAllowingStateLoss()
 
         main_bottom_navigation.setOnNavigationItemSelectedListener {
             val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
-            when(it.itemId) {
-                R.id.menu_home -> {
-                    val fragment = McHome()
-                    transaction.replace(R.id.frame_layout, fragment, "home")
+
+                when (it.itemId) {
+                    R.id.menu_home -> {
+                        val fragment = HomeFragment()
+                        transaction.replace(R.id.frame_layout, fragment, "home")
+                    }
+                    R.id.menu_coupon -> {
+                        val fragment = CouponFragment()
+                        transaction.replace(R.id.frame_layout, fragment, "coupon")
+                    }
+                    R.id.menu_menu -> {
+                        val fragment = MenuFragment()
+                        transaction.replace(R.id.frame_layout, fragment, "menu")
+                    }
                 }
-                R.id.menu_coupon -> {
-                    val fragment = CouponFragment()
-                    transaction.replace(R.id.frame_layout, fragment, "coupon")
-                }
-                R.id.menu_menu -> {
-                    val fragment = MenuFragment()
-                    transaction.replace(R.id.frame_layout, fragment, "menu")
-                }
-            }
-            transaction.commit()
-            true
+                transaction.commit()
+                true
         }
     }
 }

@@ -43,12 +43,6 @@ class CouponFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-//        val btn = view.findViewById<Button>(R.id.coupon_btn)
-//        btn.setOnClickListener {
-//            btn.setBackgroundColor(Color.parseColor("#ca2c21"))
-//            btn.setTextColor(Color.parseColor("#ffffff"))
-//        }
-
         couponBtnAdapter = CouponBtnAdapter(view.context)
         rv_coupon_btn.adapter = couponBtnAdapter
         rv_coupon_btn.addItemDecoration(CouponBtnRecyclerviewItemDecoration())

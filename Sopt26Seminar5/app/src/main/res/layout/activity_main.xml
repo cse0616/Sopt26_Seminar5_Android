@@ -7,6 +7,19 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/main_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@color/white"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@color/bottom_selector"
+            app:itemTextColor="@color/bottom_selector"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/navigation" />
+
     <ScrollView
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -21,17 +34,5 @@
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
     </ScrollView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/main_bottom_navigation"
-            android:background="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            app:menu="@menu/navigation"
-            app:itemIconTint="@color/bottom_selector"
-            app:itemTextColor="@color/bottom_selector"
-            app:itemBackground="@color/white"
-            app:labelVisibilityMode="labeled"
-            app:layout_constraintBottom_toBottomOf="@+id/scrollView"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,7 +18,12 @@ class MenuViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
         Glide.with(itemView).load(menuData.menuImage).into(menu_image)
         menu_sort.text = menuData.menuSort
         menu_name.text = menuData.menuName
-        menu_gram.text = menuData.menuGram + "g"
+
+        if(menu_sort.text.toString() == "맥카페")
+            menu_gram.text = menuData.menuGram + "ml"
+        else
+            menu_gram.text = menuData.menuGram + "g"
+
         menu_kcal.text = menuData.menuKcal + "kcal"
     }
  }

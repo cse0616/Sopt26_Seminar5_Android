@@ -46,7 +46,6 @@ class MenuFragment : Fragment() {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {}
         }
 
-
         categoryAdapter =
             CategoryAdapter(
                 view.context
@@ -78,37 +77,37 @@ class MenuFragment : Fragment() {
         categorydatas.apply {
             add(
                 CategoryData(
-                    categoryImage = "https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_960_720.png",
+                    categoryImage = R.drawable.mc_menu_1,
                     categoryName = "버거"
                 )
             )
             add(
                 CategoryData(
-                    categoryImage = "https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_960_720.png",
+                    categoryImage = R.drawable.mc_menu_2,
                     categoryName = "맥모닝"
                 )
             )
             add(
                 CategoryData(
-                    categoryImage = "https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_960_720.png",
+                    categoryImage = R.drawable.mc_menu_3,
                     categoryName = "해피밀"
                 )
             )
             add(
                 CategoryData(
-                    categoryImage = "https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_960_720.png",
+                    categoryImage = R.drawable.mc_menu_4,
                     categoryName = "사이드"
                 )
             )
             add(
                 CategoryData(
-                    categoryImage = "https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_960_720.png",
+                    categoryImage = R.drawable.mc_menu_5,
                     categoryName = "디저트"
                 )
             )
             add(
                 CategoryData(
-                    categoryImage = "https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_960_720.png",
+                    categoryImage = R.drawable.mc_menu_1,
                     categoryName = "맥카페&음료"
                 )
             )
@@ -162,6 +161,15 @@ class MenuFragment : Fragment() {
                     menuName = "1955 버거 세트",
                     menuGram = "246",
                     menuKcal = "898~1047"
+                )
+            )
+            add(
+                MenuData(
+                    menuImage = "https://cdn.pixabay.com/photo/2018/05/29/00/17/burger-3437618_960_720.png",
+                    menuSort = "맥카페",
+                    menuName = "자두칠러\nMedium",
+                    menuGram = "400",
+                    menuKcal = "198"
                 )
             )
         }

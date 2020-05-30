@@ -1,6 +1,5 @@
 package com.example.sopt26seminar5.fragment
 
-
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -16,6 +15,7 @@ import com.example.soptseminar5.CustomPagerAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.home_viewpager
 import kotlinx.android.synthetic.main.fragment_home.tab
+import java.time.LocalDateTime
 
 class HomeFragment : Fragment() {
 

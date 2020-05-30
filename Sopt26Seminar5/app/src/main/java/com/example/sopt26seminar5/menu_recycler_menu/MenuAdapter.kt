@@ -1,9 +1,10 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.menu_recycler_menu
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sopt26seminar5.R
 
 class MenuAdapter(private val context : Context) : RecyclerView.Adapter<MenuViewHolder>(){
     var datas = mutableListOf<MenuData>()

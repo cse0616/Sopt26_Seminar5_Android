@@ -1,4 +1,4 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.coupon_recycler_btn
 
 import android.graphics.Rect
 import android.view.View

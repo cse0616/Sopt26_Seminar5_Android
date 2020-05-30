@@ -1,15 +1,18 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.coupon_recycler_coupon
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sopt26seminar5.R
 
 class CouponAdapter(private val context: Context) : RecyclerView.Adapter<CouponViewHolder>() {
     var datas = mutableListOf<CouponData>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CouponViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_coupon, parent,false)
-        return CouponViewHolder(view)
+        return CouponViewHolder(
+            view
+        )
     }
 
     override fun getItemCount(): Int {

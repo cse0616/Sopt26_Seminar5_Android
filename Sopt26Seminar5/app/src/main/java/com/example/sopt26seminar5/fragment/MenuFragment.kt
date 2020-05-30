@@ -1,4 +1,4 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.fragment
 
 
 import android.os.Bundle
@@ -10,17 +10,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import com.example.sopt26seminar5.R
+import com.example.sopt26seminar5.menu_recycler_category.CategoryAdapter
+import com.example.sopt26seminar5.menu_recycler_category.CategoryData
+import com.example.sopt26seminar5.menu_recycler_menu.MenuAdapter
+import com.example.sopt26seminar5.menu_recycler_menu.MenuData
 import kotlinx.android.synthetic.main.fragment_menu.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- *
- */
 class MenuFragment : Fragment() {
     lateinit var categoryAdapter : CategoryAdapter
     val categorydatas = mutableListOf<CategoryData>()
@@ -41,7 +37,8 @@ class MenuFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val filterArr = resources.getStringArray(R.array.filterArray)
-        val spinnerAdapter = ArrayAdapter(view.context, R.layout.custom_spinner, filterArr)
+        val spinnerAdapter = ArrayAdapter(view.context,
+            R.layout.custom_spinner, filterArr)
         menu_btn_sequnce_filter.adapter = spinnerAdapter
         menu_btn_sequnce_filter.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onNothingSelected(parent: AdapterView<*>?) {}
@@ -50,9 +47,13 @@ class MenuFragment : Fragment() {
         }
 
 
-        categoryAdapter = CategoryAdapter(view.context)
+        categoryAdapter =
+            CategoryAdapter(
+                view.context
+            )
         rv_category.adapter = categoryAdapter
-        menuAdapter = MenuAdapter(view.context)
+        menuAdapter =
+            MenuAdapter(view.context)
         rv_menu.adapter = menuAdapter
         loadCategoryDatas()
         loadMenuDatas()

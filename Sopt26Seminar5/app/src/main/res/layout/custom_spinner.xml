@@ -4,8 +4,8 @@
     android:id="@+id/spinnerItem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textSize="14sp"
-    android:paddingLeft="14dp"
+    android:textSize="15sp"
+    android:paddingLeft="11dp"
     android:textColor="#333333"
     android:gravity="left"
     />

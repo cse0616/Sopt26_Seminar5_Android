@@ -1,17 +1,20 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.fragment
 
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.sopt26seminar5.R
+import com.example.sopt26seminar5.coupon_recycler_btn.CouponBtnAdapter
+import com.example.sopt26seminar5.coupon_recycler_btn.CouponBtnData
+import com.example.sopt26seminar5.coupon_recycler_btn.CouponBtnRecyclerviewItemDecoration
+import com.example.sopt26seminar5.coupon_recycler_coupon.CouponAdapter
+import com.example.sopt26seminar5.coupon_recycler_coupon.CouponData
 import kotlinx.android.synthetic.main.fragment_coupon.*
-import kotlinx.android.synthetic.main.item_coupon_button.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -43,12 +46,14 @@ class CouponFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        couponBtnAdapter = CouponBtnAdapter(view.context)
+        couponBtnAdapter =
+            CouponBtnAdapter(view.context)
         rv_coupon_btn.adapter = couponBtnAdapter
         rv_coupon_btn.addItemDecoration(CouponBtnRecyclerviewItemDecoration())
         loadCouponBtnDatas()
 
-        couponAdapter = CouponAdapter(view.context)
+        couponAdapter =
+            CouponAdapter(view.context)
         rv_coupon.adapter = couponAdapter
         rv_coupon.addItemDecoration(DividerItemDecoration(context, LinearLayoutManager.VERTICAL))
         loadCouponDatas()
@@ -59,23 +64,28 @@ class CouponFragment : Fragment() {
             add(
                 CouponBtnData(
                     menu = "버거"
-                ))
+                )
+            )
             add(
                 CouponBtnData(
                     menu = "세트"
-                ))
+                )
+            )
             add(
                 CouponBtnData(
                     menu = "맥모닝"
-                ))
+                )
+            )
             add(
                 CouponBtnData(
                     menu = "사이드&디저트"
-                ))
+                )
+            )
             add(
                 CouponBtnData(
                     menu = "맥카페&음료"
-                ))
+                )
+            )
         }
         couponBtnAdapter.datas = datas
         couponBtnAdapter.notifyDataSetChanged()
@@ -91,7 +101,8 @@ class CouponFragment : Fragment() {
                     price_origin = 0,
                     date = "가입 후 2주 이내 사용",
                     img_menu = "https://cdn.pixabay.com/photo/2017/04/04/16/25/hamburger-2201748__340.jpg"
-                ))
+                )
+            )
             add(
                 CouponData(
                     menu = "버거",
@@ -100,7 +111,8 @@ class CouponFragment : Fragment() {
                     price_origin = 5900,
                     date = "유효기간 2020-05-25",
                     img_menu = "https://cdn.pixabay.com/photo/2014/11/10/04/37/double-cheeseburger-524990__340.jpg"
-                ))
+                )
+            )
             add(
                 CouponData(
                     menu = "버거",
@@ -109,7 +121,8 @@ class CouponFragment : Fragment() {
                     price_origin = 5500,
                     date = "유효기간 2020-05-25",
                     img_menu = "https://cdn.pixabay.com/photo/2017/04/04/16/26/hamburger-2201749__340.jpg"
-                ))
+                )
+            )
             add(
                 CouponData(
                     menu = "버거",
@@ -118,7 +131,8 @@ class CouponFragment : Fragment() {
                     price_origin = 5500,
                     date = "가입 후 2주 이내 사용",
                     img_menu = "https://cdn.pixabay.com/photo/2014/11/10/04/37/double-cheeseburger-524990__340.jpg"
-                ))
+                )
+            )
             add(
                 CouponData(
                     menu = "버거",
@@ -127,7 +141,8 @@ class CouponFragment : Fragment() {
                     price_origin = 5500,
                     date = "가입 후 2주 이내 사용",
                     img_menu = "https://cdn.pixabay.com/photo/2017/04/04/16/26/hamburger-2201749__340.jpg"
-                ))
+                )
+            )
             add(
                 CouponData(
                     menu = "버거",
@@ -136,7 +151,8 @@ class CouponFragment : Fragment() {
                     price_origin = 5500,
                     date = "가입 후 2주 이내 사용",
                     img_menu = "https://cdn.pixabay.com/photo/2014/11/10/04/37/double-cheeseburger-524990__340.jpg"
-                ))
+                )
+            )
             add(
                 CouponData(
                     menu = "버거",
@@ -145,7 +161,8 @@ class CouponFragment : Fragment() {
                     price_origin = 5500,
                     date = "가입 후 2주 이내 사용",
                     img_menu = "https://cdn.pixabay.com/photo/2014/11/10/04/37/double-cheeseburger-524990__340.jpg"
-                ))
+                )
+            )
             add(
                 CouponData(
                     menu = "버거",
@@ -154,7 +171,8 @@ class CouponFragment : Fragment() {
                     price_origin = 5500,
                     date = "가입 후 2주 이내 사용",
                     img_menu = "https://cdn.pixabay.com/photo/2014/11/10/04/37/double-cheeseburger-524990__340.jpg"
-                ))
+                )
+            )
             add(
                 CouponData(
                     menu = "버거",
@@ -163,7 +181,8 @@ class CouponFragment : Fragment() {
                     price_origin = 5500,
                     date = "가입 후 2주 이내 사용",
                     img_menu = "https://cdn.pixabay.com/photo/2014/11/10/04/37/double-cheeseburger-524990__340.jpg"
-                ))
+                )
+            )
         }
         couponAdapter.datas = datas_coupon
         couponBtnAdapter.notifyDataSetChanged()

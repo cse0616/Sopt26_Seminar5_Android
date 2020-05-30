@@ -1,4 +1,4 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.menu_recycler_menu
 
 class MenuData (
     val menuImage : String,

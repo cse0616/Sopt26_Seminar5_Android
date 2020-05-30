@@ -1,11 +1,10 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.menu_recycler_menu
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.sopt26seminar5.MenuData
 import com.example.sopt26seminar5.R
 
 class MenuViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {

@@ -1,4 +1,4 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.fragment
 
 
 import android.os.Bundle
@@ -11,22 +11,12 @@ import com.example.oursopt5.recyclerview_burger.BgData
 import com.example.oursopt5.recyclerview_menu.McHomeDecoration
 import com.example.oursopt5.recyclerview_menu.MenuBtnAdapter
 import com.example.oursopt5.recyclerview_menu.MenuBtnData
+import com.example.sopt26seminar5.R
 import com.example.soptseminar5.CustomPagerAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.home_viewpager
 import kotlinx.android.synthetic.main.fragment_home.tab
-import kotlinx.android.synthetic.main.fragment_mc_home.*
 
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- *
- */
 class HomeFragment : Fragment() {
 
     lateinit var bgAdapter: BgAdapter

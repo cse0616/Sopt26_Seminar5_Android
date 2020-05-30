@@ -1,4 +1,4 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.coupon_recycler_coupon
 
 data class CouponData(
     val menu : String,

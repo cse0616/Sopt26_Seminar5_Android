@@ -1,15 +1,18 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.menu_recycler_category
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sopt26seminar5.R
 
 class CategoryAdapter(private val context : Context) : RecyclerView.Adapter<CategoryViewHolder>(){
     var datas = mutableListOf<CategoryData>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_category,parent,false)
-        return CategoryViewHolder(view)
+        return CategoryViewHolder(
+            view
+        )
     }
 
     override fun getItemCount(): Int {

@@ -1,12 +1,11 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.coupon_recycler_coupon
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import org.jetbrains.anko.find
-import org.w3c.dom.Text
+import com.example.sopt26seminar5.R
 
 
 class CouponViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

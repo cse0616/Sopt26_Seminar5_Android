@@ -1,9 +1,9 @@
-package com.example.sopt26seminar5
+package com.example.sopt26seminar5.coupon_recycler_btn
 
 import android.view.View
 import android.widget.Button
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sopt26seminar5.R
 
 
 class CouponBtnViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

@@ -24,8 +24,8 @@
         android:textSize="12sp"
         android:layout_marginLeft="15dp"
         app:layout_constraintStart_toEndOf="@+id/menu_image"
-        app:layout_constraintTop_toTopOf="@+id/menu_image"
-        />
+        app:layout_constraintTop_toTopOf="@+id/menu_image"/>
+
     <TextView
         android:id="@+id/menu_name"
         android:layout_width="0dp"

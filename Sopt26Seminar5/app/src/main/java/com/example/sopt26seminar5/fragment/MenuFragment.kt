@@ -2,8 +2,6 @@ package com.example.sopt26seminar5.fragment
 
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +14,7 @@ import com.example.sopt26seminar5.menu_recycler_category.CategoryData
 import com.example.sopt26seminar5.menu_recycler_menu.MenuAdapter
 import com.example.sopt26seminar5.menu_recycler_menu.MenuData
 import kotlinx.android.synthetic.main.fragment_menu.*
+import textResetButton
 
 class MenuFragment : Fragment() {
     lateinit var categoryAdapter : CategoryAdapter
@@ -57,20 +56,7 @@ class MenuFragment : Fragment() {
         loadCategoryDatas()
         loadMenuDatas()
 
-        search.addTextChangedListener(object: TextWatcher {
-            override fun afterTextChanged(s: Editable?) {}
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if(s.isNullOrBlank()) {text_reset.visibility = View.INVISIBLE}
-                else text_reset.visibility = View.VISIBLE
-            }
-        })
-
-        text_reset.visibility = View.INVISIBLE
-        text_reset.setOnClickListener(){
-            if(search.text.toString() != null)
-                search.setText("")
-        }
+        text_reset.textResetButton(search)
     }
 
     private fun loadCategoryDatas(){
